@@ -9,5 +9,11 @@ installation.yaml
 build
 *.userdb
 
+# 同步目录
+sync
+
+# 编辑器生成的
+.idea
+
 # 自定义文件
-*.custom.yaml
+# *.custom.yaml

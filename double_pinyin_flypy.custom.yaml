@@ -1,0 +1,5 @@
+patch:
+  "switches/@last":
+    name: emoji_suggestion
+    reset: 0 // 关闭Emoji
+    states: [ "😣️","😁️"]
