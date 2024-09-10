@@ -3,3 +3,8 @@ patch:
     name: emoji_suggestion
     reset: 0 // 关闭Emoji
     states: [ "😣️","😁️"]
+  key_binder:
+    import_preset: default
+    bindings:
+      - { when: composing, accept: Shift+Tab, send: Page_Up }
+      - { when: composing, accept: Tab, send: Page_Down }
