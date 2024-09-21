@@ -2,7 +2,8 @@ customization:
   distribution_code_name: Weasel
   distribution_version: 0.16.1
   generator: "Weasel::UIStyleSettings"
-  modified_time: "Mon Sep  9 09:53:25 2024"
+  modified_time: "Sat Sep 21 15:42:55 2024"
   rime_version: 1.11.2
 patch:
-  "show_notifications": true
+  show_notifications: true
+  "style/color_scheme": mint_light_blue
