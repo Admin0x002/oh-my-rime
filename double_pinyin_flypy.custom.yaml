@@ -8,3 +8,25 @@ patch:
     bindings:
       - { when: composing, accept: Shift+Tab, send: Page_Up }
       - { when: composing, accept: Tab, send: Page_Down }
+  "punctuator/half_shape":
+    "#": "#"
+    "*": "*"
+    "+": "+"
+    "-": "-"
+    "`": "`"
+    "~": "~"
+    "@": "@"
+    "=": "="
+    "/": "/"
+    "\\": "、"
+    "_" : "_"
+    "'": "'"
+    "$": ["¥", "$"]
+    "(": "("
+    ")": ")"
+    ";": {commit: ";"}
+    "<": {commit: "《"}
+    ">": {commit: "》"}
+    "{": "｛"
+    "}": "}"
+  "menu/page_size": 5
