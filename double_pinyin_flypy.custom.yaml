@@ -1,14 +1,21 @@
 patch:
-  "switches/@last":
-    name: emoji_suggestion
-    reset: 0 // 关闭Emoji
-    states: [ "😣️","😁️"]
+  switches:
+    - name: ascii_punct
+      reset: 0
+      states: ["中文标点", "英文标点"]
+    - name: emoji_suggestion
+      reset: 0
+      states: ["😣️", "😁️"]
+  
   key_binder:
     import_preset: default
     bindings:
       - { when: composing, accept: Shift+Tab, send: Page_Up }
       - { when: composing, accept: Tab, send: Page_Down }
-  "punctuator/half_shape":
+  
+  punctuator/half_shape:
+    ",": {commit: ","}
+    ".": {commit: "."}
     "#": "#"
     "*": "*"
     "+": "+"
@@ -19,14 +26,23 @@ patch:
     "=": "="
     "/": "/"
     "\\": "、"
-    "_" : "_"
+    "_": "_"
     "'": "'"
-    "$": ["¥", "$"]
+    "\"": "\""
+    "$": "¥"
+    "%": "%"
+    "!": "!"
     "(": "("
     ")": ")"
     ";": {commit: ";"}
-    "<": {commit: "《"}
-    ">": {commit: "》"}
-    "{": "｛"
+    "<": "<"
+    ">": ">"
+    "{": "{"
     "}": "}"
-  "menu/page_size": 5
+    "[": "["
+    "]": "]"
+    "|": "|"
+    "^": "^"
+    "&": "&"
+
+  menu/page_size: 4
